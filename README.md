@@ -96,6 +96,10 @@ Operating system has two layers
 * This command is used to build an image from a specified docker file
 16. docker start <container id>
 * Start the container with its id by doind docker ps
+17. docker run -p<port name of laptop>:<container port>
+* Binds the port and the container
+18. docker run -d -p<port name of laptop>:<container port> --name <new name> <older name>
+* It will rename the older name of the image
 # Container Port vs Host Port
 * Multiple containers can run on your host machine as container is just the virtual environment running on the host.
   * Your laptop has only certain ports available

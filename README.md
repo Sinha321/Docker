@@ -106,5 +106,7 @@ Operating system has two layers
   * How is the binding between the port that the host machine has and the container
   * Conflict when same port on host machine
   * Two containers say 3000 and 3001 can listen to same port 3000 when it is binded to two different ports from the host amchine. Once the binding between the host and the container is done , we can actually connect to the running container using the port of the host.
-  
+
+ ![image](https://github.com/Sinha321/Docker/assets/116704941/c73a3ea9-515c-4c70-a98d-7f41aac48268)
+
   

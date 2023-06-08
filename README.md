@@ -60,11 +60,12 @@ Operating system has two layers
 * This command is used to pull images from the docker repository(hub.docker.com)
 3. docker run
 * Usage: docker run -it -d <image name>
-* This command is used to create a container from an image
+* Usage: docker run  -d <image name> -starts a new container with a command(detached mode)
+* This command is used to create a container from an image. Docker run command pulls the image and starts container
 4. docker ps
 * This command is used to list the running containers
 5. docker ps -a
-* This command is used to show all the running and exited containers
+* This command is used to show all the running and stopped containers
 6. docker exec
 * Usage: docker exec -it <container id> bash
 * This command is used to access the running container
@@ -93,3 +94,13 @@ Operating system has two layers
 15. docker build
 * Usage: docker build <path to docker file>
 * This command is used to build an image from a specified docker file
+16. docker start <container id>
+* Start the container with its id by doind docker ps
+# Container Port vs Host Port
+* Multiple containers can run on your host machine as container is just the virtual environment running on the host.
+  * Your laptop has only certain ports available
+  * How is the binding between the port that the host machine has and the container
+  * Conflict when same port on host machine
+  * Two containers say 3000 and 3001 can listen to same port 3000 when it is binded to two different ports from the host amchine. Once the binding between the host and the container is done , we can actually connect to the running container using the port of the host.
+  
+  
